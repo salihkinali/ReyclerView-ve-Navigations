@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/newsCardDesign"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:layout_margin="10dp"
+    app:cardCornerRadius="10dp"
+    android:elevation="50dp"
+    android:layout_marginBottom="10dp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+        <ImageView
+            android:id="@+id/newImage"
+            android:layout_width="match_parent"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/bursa" />
+
+        <TextView
+            android:id="@+id/newTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:text="Ankara Buzlu Hava ile Uyandı,Ankara Buzlu Hava ile Uyandı,Ankara Buzlu Hava ile Uyandı"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newImage" />
+
+        <TextView
+            android:id="@+id/newDetail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:text="CUMHUR İTTİFAKI YÜZDE 42'Yİ GÖRDÜ
+Buna göre; kararsızlar dağıtılmadan önce Cumhur İttifakı üyesi AK Parti'nin oy oranı yüzde 26,4 iken kararsızlar dağıtıldıktan sonra yüzde 32,7 oldu. Cumhur İttifakı'nın diğer ortağı MHP'nin oy oranı ise kararsızlar dağıtılmadan önce yüzde 7,5 olurken kararsızlar dağıtıldıktan sonra yüzde 9,3'e yükseldi. Böylece Cumhur İttifakı'nın iki ortağının toplam oy oranı kararsızlar dağıtılmadan önce yüzde 33,9 oldu. İki partinin kararsızlar dağıtıldıktan sonraki oy oranı ise yüzde 42 seviyesine çıktı."
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/newTitle" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>

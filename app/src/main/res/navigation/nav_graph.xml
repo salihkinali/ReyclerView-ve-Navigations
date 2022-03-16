@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.salihkinali.haberuygulamasi.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/homeToDetayFragment"
+            app:destination="@id/detayFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detayFragment"
+        android:name="com.salihkinali.haberuygulamasi.DetayFragment"
+        android:label="fragment_detay"
+        tools:layout="@layout/fragment_detay" >
+        <argument
+            android:name="newImagesId"
+            app:argType="integer" />
+        <argument
+            android:name="tittle"
+            app:argType="string" />
+        <argument
+            android:name="newdetail"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/profilFragment"
+        android:name="com.salihkinali.haberuygulamasi.ProfilFragment"
+        android:label="fragment_profil"
+        tools:layout="@layout/fragment_profil" />
+    <fragment
+        android:id="@+id/messageFragment"
+        android:name="com.salihkinali.haberuygulamasi.MessageFragment"
+        android:label="fragment_message"
+        tools:layout="@layout/fragment_message" >
+        <action
+            android:id="@+id/message_to_detailFragment"
+            app:destination="@id/messageDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/messageDetailFragment"
+        android:name="com.salihkinali.haberuygulamasi.MessageDetailFragment"
+        android:label="fragment_message_detail"
+        tools:layout="@layout/fragment_message_detail" >
+        <argument
+            android:name="profileImage"
+            app:argType="integer" />
+        <argument
+            android:name="profileName"
+            app:argType="string" />
+        <argument
+            android:name="profileDate"
+            app:argType="string" />
+    </fragment>
+</navigation>

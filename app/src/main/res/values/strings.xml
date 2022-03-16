@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">HaberUygulamasi</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="home_fragment">Home Fragment</string>
+    <string name="detay_fragment">Detay Fragment</string>
+    <string name="admin_slh">Admin: Salih Kınalı</string>
+    <string name="Anasayfa">Anasayfa</string>
+    <string name="profil">Profil</string>
+    <string name="message">Mesajlar</string>
+</resources>
