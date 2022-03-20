@@ -7,6 +7,9 @@
     <style name="bottomCorner">
         <item name="cornerFamily">rounded</item>
         <item name="cornerRadius">10dp</item>
+        <item name="itemTextColor">@color/navbar_color</item>
+        <item name="itemIconTint">@color/navbar_color</item>
+
     </style>
     <style name="Button.White" parent="ThemeOverlay.AppCompat">
         <item name="colorAccent">@android:color/white</item>

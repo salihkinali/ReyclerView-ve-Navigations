@@ -3,19 +3,17 @@ package com.salihkinali.haberuygulamasi
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
-import com.salihkinali.haberuygulamasi.databinding.MessageCardviewBinding
+import com.salihkinali.haberuygulamasi.databinding.ListItemMessageBinding
 import com.salihkinali.haberuygulamasi.model.PhoneDirectoryModel
 
 class DirectoryAdapter(private var personList: ArrayList<PhoneDirectoryModel>):RecyclerView.Adapter<DirectoryAdapter.MessageCardDesign>() {
     var onMessageSize:(PhoneDirectoryModel) -> Unit = {}
-    var isselected: Boolean = false
-    private lateinit var selectedItem: ArrayList<PhoneDirectoryModel>
     var onMessageItem: (PhoneDirectoryModel) -> Unit = {}
-    class MessageCardDesign(val messageCardviewBinding: MessageCardviewBinding):RecyclerView.ViewHolder(messageCardviewBinding.root)
+    class MessageCardDesign(val messageCardviewBinding: ListItemMessageBinding):RecyclerView.ViewHolder(messageCardviewBinding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): DirectoryAdapter.MessageCardDesign {
         val layoutInflater = LayoutInflater.from(parent.context)
-        val messageCardviewBinding = MessageCardviewBinding.inflate(layoutInflater,parent,false)
+        val messageCardviewBinding = ListItemMessageBinding.inflate(layoutInflater,parent,false)
         return MessageCardDesign(messageCardviewBinding)
     }
 

@@ -12,7 +12,7 @@
           />
       <item
           android:id="@+id/profilFragment"
-          android:icon="@drawable/ic_person"
+          android:icon="@drawable/users_24"
           android:title="@string/profil"
           />
 

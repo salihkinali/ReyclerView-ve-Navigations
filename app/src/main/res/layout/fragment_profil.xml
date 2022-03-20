@@ -1,33 +1,134 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout
+<androidx.appcompat.widget.LinearLayoutCompat
     xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".ProfilFragment">
-
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="300dp"
-        android:layout_height="300dp"
-        android:layout_marginTop="100dp"
-        android:src="@drawable/admin_res"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
+    android:orientation="vertical"
+    tools:context=".ProfilFragment"
+    tools:layout_editor_absoluteY="25dp">
     <TextView
-        android:id="@+id/adminres"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="44dp"
-        android:text="@string/admin_slh"
-        android:textSize="35sp"
-        android:textStyle="bold"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-</androidx.constraintlayout.widget.ConstraintLayout>
+        android:padding="5dp"
+        android:id="@+id/profilText"
+        android:text="Profil Bölümü"
+        android:gravity="center"
+        android:fontFamily="@font/allerta"
+        android:textSize="25sp"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#6A6969"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#C65D7B"
+            android:layout_marginEnd="5dp">
+        </View>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Adı Soyadı: Salih Kınalı"
+                android:fontFamily="@font/archivo_black"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Yaş: 26"
+                android:textSize="14sp"/>
+            <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/archivo_black"
+            android:text="Yaşadığı Şehir: Denizli"
+            android:textSize="14sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Nereli: Isparta"
+                android:textSize="14sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#6A6969"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <View
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:background="#C65D7B"
+            android:layout_marginEnd="5dp">
+        </View>
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Eğitim Durumu: Lisans"
+                android:fontFamily="@font/archivo_black"
+                android:textSize="14sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Üniversite / Bölüm: Dumlupınar U. Maliye"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Lise: Denizli Ticaret M.L."
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="Bölüm: Web Programcılığı"
+                android:textSize="12sp"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/archivo_black"
+                android:text="İlgilendiği Alanlar: Android,Kotlin,Java"
+                android:textSize="12sp"/>
+
+        </androidx.appcompat.widget.LinearLayoutCompat>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="0.5dp"
+            android:background="#6A6969"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"/>
+
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:background="#6A6969"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"/>
+
+</androidx.appcompat.widget.LinearLayoutCompat>
